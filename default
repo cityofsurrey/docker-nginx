@@ -19,4 +19,8 @@ server {
   location @root {
     rewrite .* / redirect;
   }
+
+  # disable logs
+  access_log  off;
+  error_log off;
 }
